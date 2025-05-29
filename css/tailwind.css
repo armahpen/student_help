@@ -2,7 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components{
-}
+@layer components {
+    .btn-primary {
+        @apply tw-bg-primary tw-text-white tw-font-semibold tw-rounded-full tw-px-6 tw-py-3 tw-transition-colors hover:tw-bg-opacity-80;
+    }
 
-  
+    .btn-secondary {
+        @apply tw-bg-white tw-text-primary tw-font-semibold tw-rounded-full tw-px-6 tw-py-3 tw-border-2 tw-border-primary tw-transition-colors hover:tw-bg-primary hover:tw-text-white;
+    }
+
+    .section-container {
+        @apply tw-max-w-[1200px] tw-mx-auto tw-px-[5%] tw-py-8;
+    }
+
+    .card {
+        @apply tw-bg-white tw-rounded-lg tw-shadow-lg tw-p-6 tw-transition-colors hover:tw-bg-[#FFF8E1];
+    }
+
+    .testimonial-card {
+        @apply tw-bg-[#FFF8E1] tw-rounded-lg tw-shadow-md tw-p-4 tw-mt-4 tw-text-gray-600;
+    }
+
+    .stat-card {
+        @apply tw-text-center tw-bg-white tw-rounded-md tw-p-4 tw-shadow-md;
+    }
+
+    .nav-link {
+        @apply tw-text-black tw-font-medium tw-px-4 tw-py-2 tw-transition-colors hover:tw-text-primary;
+    }
+}
